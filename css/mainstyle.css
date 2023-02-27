@@ -1,0 +1,491 @@
+@font-face {
+    font-family: 'Cafe24Danjunghae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Danjunghae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Yeongdo-Rg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/Yeongdo-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 태그이름을 통한 CSS 디자인 */
+
+h1{
+    font-size: 2rem;
+}
+
+section{
+    max-width: 1000px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+body{
+    font-family: 'SUIT-Regular';
+}
+
+/* 클래스 이름을 통한 CSS 디자인 */
+
+/* header 시작 */
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: #00035399;
+    /* 컬러뒤에 CC 나 99를 붙이면 투명해짐 */
+    /* background-color: lightblue; */
+    z-index: 100;
+}
+
+.header>.nav{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: lightcyan; */
+}
+
+.header>.nav>.nav_menu{
+    display: flex;
+    /* float: left; */
+    width: 30%;
+    margin-right: -3%;
+    justify-content: space-evenly;
+    /* padding: 10px; */
+}
+
+.header>.nav>.nav_menu li{
+    margin-left: 40px;
+}
+
+.header>.nav>.nav_menu a:hover{
+    color: rgb(0, 255, 242);
+    font-weight: 500;
+}
+
+.header>.nav>.nav_menu a::after{
+    content: "";
+    display: inline-block;
+    /* width: 70px; */
+    width: 0;
+    height: 1px;
+    background-color: rgb(0, 255, 242);
+    position: absolute;
+    bottom: 15px;
+    margin-left: -62px;
+}
+
+.header>.nav>.nav_menu a:hover:after{
+    width: 70px;
+    transition: all 0.5s;
+}
+
+.header>.nav>.nav_menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Yeongdo-Rg';
+}
+
+
+.header>.nav>.nav_title{
+    width: 130px;
+    text-align: center;
+    /* background-color: lightsalmon; */
+    font-size: 1.3rem;
+    font-weight: 600;
+    /* font-family: 'Cafe24Danjunghae'; */
+    font-family: 'Yeongdo-Rg';
+    color: rgb(0, 255, 242);
+}
+
+
+/* main 시작 */
+/* 섹션부분을 찾기 힘들것같다면 메인에 두어도 상관없음 */
+.main{
+    /* background-color: rgb(210, 247, 230); */
+}
+
+
+/* star */
+
+
+/* section 단위로 접근 */
+.section1_wrap{
+    width: 100%;
+    min-width: 300px;
+    height: 100vh;
+    min-height: 400px;
+    background-image: url(../img/hd-wallpaper-gb4bc7e703_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(215, 255, 210);
+
+}
+
+.section1_wrap>.section1_title{
+    padding: 420px 20px 0 20px;
+    color: white;
+    /* font-family: 'Yeongdo-Rg'; */
+    text-align: right;
+}
+
+.section1_wrap>.section1_title h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 3px black;
+    font-family: 'Yeongdo-Rg';
+    font-weight: 900;
+    color: rgb(0, 255, 242);
+}
+
+.section1_wrap>.section1_title h3{
+    font-size: 20px;
+    margin-top: 10px;
+    /* font-family: 'Yeongdo-Rg'; */
+}
+
+.section1_title_bg{
+    width: 300px;
+    height: 150px;
+    margin-top: -130px;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+}
+
+
+
+
+
+/* section2 축제설명 */
+.section2_intro{
+    text-align: center;
+    padding: 100px 0;
+    padding-top: 200px;
+    line-height: 130%;
+    height: 60vh;
+}
+
+.section2_intro>.intro_title{
+    margin-bottom: 30px;
+}
+
+.intro_title h1{
+    font-family: 'Yeongdo-Rg';
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #000353;
+}
+
+.section2_intro>.intro_descript>table{
+    margin: 50px auto;
+    height: 100px;
+}
+
+.section2_intro>.intro_descript>table tr td:first-child{
+    font-weight: 700;
+    /* background-color: #000353; */
+    color: #000353;
+    border-radius: 20px;
+    padding: 2px 15px;
+    border-right: 2px solid #000353;
+}
+
+.section2_intro>.intro_descript>table tr td:last-child{
+    text-align: left;
+    padding-left: 15px;
+}
+
+.section2_intro>.intro_title>p{
+    width: 80%;
+    margin: 10px auto;
+    line-height: 22px;
+}
+
+
+/* section3 행사이미지 */
+.section3_wrap{
+    background-color: #00035399;
+    height: 70vh;
+}
+
+.section3_wrap>.section3_gallery{
+    padding-top: 100px;
+    width: 100%;
+    margin: 0 auto;
+    /* background-color: antiquewhite; */
+}
+
+.section3_wrap>.section3_gallery>.gallery_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.section3_wrap>.section3_gallery>.gallery_title h1{
+    font-family: 'Yeongdo-Rg';
+    color: white;
+}
+
+.section3_wrap>.section3_gallery>.gallery_title a{
+    background-color: #000353;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    border: 1px solid white;
+}
+
+.section3_wrap>.section3_gallery>.gallery_title a:hover{
+    color: rgb(0, 255, 242);
+    font-weight: 500;
+    border: 1px solid rgb(0, 255, 242);
+}
+
+
+.gallery_board_box{
+    width: 1000px;
+    height: 350px;
+    margin: 70px auto;
+    padding-left: 60px;
+    /* background-color: aqua; */
+}
+
+
+.gallery_board{
+    width: 280px;
+    height: 350px;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+    float: left;
+    margin-right: 15px;
+    background-color: #898ab4;
+}
+
+.gallery_board>h4{
+    font-weight: 800;
+    margin-left: 15px;
+    color: white;
+}
+
+.gallery_board>p{
+    margin-top: 10px;
+    margin-left: 15px;
+    color: white;
+}
+
+/* section3 이미지 넣는 공간 */
+.gallery_board:nth-child(1) .image{
+    /* margin: 15px; */
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background-image: url(../img/glitter-ge12674421_1920.jpg);
+    background-size: cover;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.gallery_board:nth-child(2) .image{
+    /* margin: 15px; */
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background-image: url(../img/glitter-ge12674421_1920.jpg);
+    background-size: cover;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+
+.gallery_board:nth-child(3) .image{
+    /* margin: 15px; */
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background-image: url(../img/glitter-ge12674421_1920.jpg);
+    background-size: cover;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.gallery_board .img_box{
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+    overflow: hidden;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.gallery_board:hover .image{
+    scale: 1.1;
+}
+
+
+/* section4 */
+
+.section4_news{
+    width: 100%;
+    margin: 100px auto;
+    height: 50vh;
+}
+
+.section4_news h1{
+    font-family: 'Yeongdo-Rg';
+}
+
+.section4_news>table{
+    width: 80%;
+    margin: 50px auto
+}
+
+.section4_news>table tr td:first-child{
+    color: #000353;
+    font-weight: 800;
+    padding-right: 50px;
+    width: 30%;
+}
+
+.section4_news>table tr td:last-child{
+    text-align: left;
+}
+
+.section4_news>table tr:first-child>td:last-child{
+    text-align: center;
+    font-weight: 800;
+}
+
+.section4_news>table tr td{
+    margin: 30px;
+    padding: 10px;
+    border-bottom: #000353 1px solid;
+    border-top: #000353 1px solid;
+    text-align: center;
+}
+
+.section4_news tr:hover{
+    background-color: rgba(10, 10, 10, 0.1);
+    cursor: pointer;
+}
+
+.section4_news tr:hover td:last-child{
+    font-weight: 600;
+}
+
+.first_td{
+    background-color: #b8bad8;
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: 50px;
+    padding: 30px 0;
+    /* background-color: #000353; */
+    background-color: darkgray;
+    color: white;
+}
+
+/* .footer_content{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+.footer_content{
+    display: flex;
+    padding: 0 100px;
+    justify-content: space-evenly;
+    color: black;
+    font-size: 14px;
+}
+
+.footer_content>h1{
+    width: 130px;
+    text-align: center;
+    /* background-color: lightsalmon; */
+    font-size: 1.3rem;
+    font-weight: 600;
+    /* font-family: 'Cafe24Danjunghae'; */
+    font-family: 'Yeongdo-Rg';
+    color: lightgray;
+    border-right: 1px solid lightgray;
+    padding-right: 10px;
+}
+
+.footer_info{
+    width: 700px;
+}
+
+.footer_info>p{
+    line-height: 20px;
+    float: left;
+    padding-right: 50px;
+}
+
+.footer_info>p:nth-child(2){
+    font-weight: 800;
+}
+
+.footer_info>p:last-child{
+    padding: 0;
+    clear: both;
+}
+
+.footer_sns>a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+
+/* top 버튼 */
+.top_btn{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    /* background-color: #000353; */
+    background-color: rgb(0, 255, 242);
+    
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    /* border: 1px solid white; */
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.top_btn>a{
+    color: #000353;
+    text-decoration: none;
+}
+
+.top_btn:hover{
+    background-color: #000353;
+    color: rgb(0, 255, 242);
+    border: 1px solid rgb(0, 255, 242);
+}
+
+.top_btn:hover>a{
+    color: rgb(0, 255, 242);
+}
