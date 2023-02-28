@@ -1,0 +1,64 @@
+/* map.html에 적용되는 css */
+
+
+.map_main{
+    /* background-color: antiquewhite; */
+}
+/* section_map */
+.section_map{
+    padding: 180px;
+}
+
+.section_map>div{
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.section_map>h1{
+    font-family: 'Yeongdo-Rg';
+    font-size: 28px;
+    color: #000353;
+    margin-bottom: 20px;
+}
+
+.map_main>.section_map>h3{
+    font-size: 1.3rem;
+    margin-top: 50px;
+    /* margin-left: 20px; */
+}
+
+.map_main>.section_map>p{
+    margin-top: 10px;
+    /* margin-left: 20px; */
+}
+
+.map_main>.section_map>table{
+    margin: 0 auto;
+    width: 637px;
+    height: 120px;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.map_main>.section_map>table tr{
+    border-top: 1px solid #333;
+}
+
+.map_main>.section_map>table tr:first-child{
+    background-color: #b8bad8;
+}
+
+.map_main>.section_map>table tr:last-child{
+    border-bottom: 1px solid #333;
+}
+
+.map_main>.section_map>table tr td:first-child{
+    width: 200px;
+}
+
+.map_main>.section_map>table tr:last-child td:last-child{
+    line-height: 20px;
+    padding-bottom: 5px;
+}

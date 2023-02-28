@@ -1,0 +1,26 @@
+/* 마진과 패딩값은 각각의 태그안에 넣어줄 수도 있지만
+따로 빼서도 많이 작성함 */
+
+.m_all_1{
+    margin: 10px;
+}
+
+.m_all_2{
+    margin: 20px;
+}
+
+.p_top_1{
+    padding-top: 10px;
+}
+
+.p_top_2{
+    padding-top: 20px;
+}
+
+.p_left_1{
+    padding-left: 10px;
+}
+
+.p_left_2{
+    padding-left: 20px;
+}

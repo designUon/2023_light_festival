@@ -1,0 +1,82 @@
+/* QnA.html의 CSS디자인 */
+
+/* main_QnA */
+
+.main_qna{
+    height: calc(100vh - 100px);
+}
+.section_qna{
+    padding: 200px;
+    text-align: left;
+}
+
+.section_qna h1{
+    font-family: 'Yeongdo-Rg';
+    font-size: 28px;
+    color: #000353;
+    margin-bottom: 30px;
+}
+
+.section_qna>form{
+    margin: 0 auto;
+}
+
+.section_qna>form>div{
+    margin-bottom: 7px;
+}
+
+.section_qna>form label{
+    display: inline-block;
+    width: 60px;
+}
+
+.section_qna>form input[type="text"]{
+    width: 250px;
+    height: 25px;
+}
+
+.section_qna>form textarea{
+    /* width: 265px; */
+    width: 100%;
+    margin-top: 10px;
+}
+
+.section_qna>form span{
+    float: left;
+}
+
+.section_qna>form input[type="checkbox"] {
+    float: left;
+}
+
+.section_qna>form input[type="submit"] {
+    float: right;
+}
+
+
+
+.qna_btn{
+    margin-top: 5px;
+    margin-left: -5px;
+    /* width: 276px; */
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    display: block;
+}
+
+
+
+/* 개인정보제공 동의에 체크하면 버튼 배경색 변경 */
+.qna_btn>input[type="submit"]{
+    width: 50px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #000353;
+    line-height: 17px;
+}
+
+.qna_btn input[type="checkbox"]:checked input[type="submit"] {
+    background-color: #000353;
+    color: white;
+}
